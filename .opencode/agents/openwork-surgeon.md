@@ -29,7 +29,6 @@ Source of truth
 Primary files to reference and update (when relevant)
 - `_repos/openwork/AGENTS.md`: product vocabulary, component boundaries, and audience. Keep terms consistent (app/server/worker). If behavior changes, update the definitions here first.
 - `_repos/openwork/ARCHITECTURE.md`: authoritative system design and runtime flow source of truth. When worker lifecycle, connect flow, auth, hosted/cloud behavior, or other architecture/runtime behavior changes, update this doc in the same change.
-- `_repos/openwork/packaging/docker/dev-up.sh`: canonical local dev stack entrypoint. If local-stack expectations change, keep this script and its docs consistent.
 - `_repos/openwork/packaging/`: release/build packaging expectations. Touch only when required by the fix; prefer minimal deltas and quick smoke verification.
 
 Repos in scope
@@ -49,7 +48,7 @@ When to ask a question
 
 Default operational behaviors
 - Sync when needed for correctness: if you will edit code or depend on submodule state, use `.opencode/skills/sync-submodules/SKILL.md`.
-- Test the real flow when it matters: Docker dev stack (`_repos/openwork/packaging/docker/dev-up.sh`) + Chrome MCP (`.opencode/skills/openwork-docker-chrome-mcp/SKILL.md`).
+- Test the real flow when it matters: start the narrowest supported product stack for the flow and verify it with Chrome MCP.
 
 Do not do
 - Do not change public APIs, data models, or behavior contracts unless explicitly requested or required by the fix.

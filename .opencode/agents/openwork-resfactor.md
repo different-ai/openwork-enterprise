@@ -54,7 +54,7 @@ When to ask a question
 Default operational behaviors
 - Sync when needed for correctness: if you will edit code or depend on submodule state, use `.opencode/skills/sync-submodules/SKILL.md`.
 - For app-architecture work, consult `.opencode/skills/cupid-app-architecture/SKILL.md` first.
-- Test the real flow when the refactor changes user-facing or remote behavior: Docker dev stack (`_repos/openwork/packaging/docker/dev-up.sh`) + Chrome MCP (`.opencode/skills/openwork-docker-chrome-mcp/SKILL.md`).
+- Test the real flow when the refactor changes user-facing or remote behavior: start the narrowest supported product stack for the flow and verify it with Chrome MCP.
 
 Do not do
 - Do not broaden the task into a repo-wide architecture rewrite.

@@ -22,7 +22,7 @@ Dev stacks exercised during this audit:
 
 ## Core Flows Tried
 
-- Start a Docker dev stack (`packaging/docker/dev-up.sh`) and open `/session`
+- Start a local OpenWork app/server stack and open `/session`
 - Create sessions ("New task") and send messages
 - Open model picker and change model
 - Navigate: Automations / Skills / Plugins / Apps / Settings

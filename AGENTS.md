@@ -43,8 +43,9 @@ Default behaviors:
 - Why: integration failures are the expensive ones.
 - What: run the product stack and verify through the UI.
 - How:
-  - Start the OpenWork dev stack via Docker (from `_repos/openwork`): `packaging/docker/dev-up.sh`.
-  - Verify the user flow via Chrome MCP using `.opencode/skills/openwork-docker-chrome-mcp/SKILL.md`.
+  - Start the narrowest supported product stack for the flow under test.
+  - Verify the user flow via Chrome MCP using the relevant flow-specific skill.
+  - When the user asks you to do anything that relies on interacting with a browser (click/type/navigate, capture screenshots, inspect console/network/perf), prefer `functions.chrome-devtools_*` tools.
   - Capture screenshots as validation artifacts; if screenshot capture is blocked, document the blocker.
 
 4) Release flow (when asked to ship a release)
@@ -109,8 +110,8 @@ When the user asks to create a new feature, use this procedure:
 1. Make sure you are up to date on all submodules and repos synced to the head of remotes.
 2. Create a worktree.
 3. Implement the feature.
-4. Start the OpenWork dev stack via Docker (from `_repos/openwork`): `packaging/docker/dev-up.sh`.
-5. Use Chrome MCP to fully test the feature: `.opencode/skills/openwork-docker-chrome-mcp/SKILL.md`.
+4. Start the narrowest supported product stack for the flow under test.
+5. Use Chrome MCP to fully test the feature with the relevant flow-specific skill.
 6. Take screenshots and put them in the repo.
 7. Refer to these artifacts in the PR (only if relevant in the UI).
 8. Always test the flow you just implemented.

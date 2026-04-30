@@ -16,7 +16,7 @@ This is a hands-on UI/UX pass over OpenWork's web UI using the Docker dev stack 
 
 ## Core Flows Tried
 
-- Start a Docker dev stack (`packaging/docker/dev-up.sh`) and open `/session`
+- Start a local OpenWork app/server stack and open `/session`
 - Create sessions ("New task") and send messages
 - Open model picker and change model
 - Navigate: Automations / Skills / Plugins / Apps / Settings
@@ -25,7 +25,7 @@ This is a hands-on UI/UX pass over OpenWork's web UI using the Docker dev stack 
 
 ## Setup Quirks (Non-UI, but blocks the UX audit)
 
-1) `packaging/docker/dev-up.sh` requires Docker Compose v2 (`docker compose`).
+1) The legacy Docker dev stack required Docker Compose v2 (`docker compose`).
 
 - Symptom: `unknown shorthand flag: 'p' in -p` and/or `docker: unknown command: docker compose`
 - Fix (Homebrew install + Docker CLI plugin discovery):
