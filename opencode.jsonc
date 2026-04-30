@@ -15,19 +15,17 @@
         "http://127.0.0.1:9823"
       ]
     },
+    "openwork-cloud-local": {
+      "type": "remote",
+      "enabled": true,
+      "url": "http://localhost:8790/mcp",
+      "oauth": {}
+    },
     "notion": {
       "type": "remote",
       "enabled": true,
       "url": "https://mcp.notion.com/mcp",
       "oauth": {}
-    },
-    "linear": {
-      "type": "remote",
-      "enabled": true,
-      "url": "https://mcp.linear.app/mcp",
-      "oauth": {}
     }
   }
 }
-
-
