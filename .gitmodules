@@ -21,3 +21,6 @@
 [submodule "_repos/agent-watch"]
 	path = _repos/agent-watch
 	url = https://github.com/different-ai/agent-watch.git
+[submodule "_repos/handsfree"]
+	path = _repos/handsfree
+	url = https://github.com/different-ai/handsfree.git
