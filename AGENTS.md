@@ -112,9 +112,8 @@ When the user asks to create a new feature, use this procedure:
 3. Implement the feature.
 4. Start the narrowest supported product stack for the flow under test.
 5. Use Chrome MCP to fully test the feature with the relevant flow-specific skill.
-6. Take screenshots and put them in the repo.
-7. Refer to these artifacts in the PR (only if relevant in the UI).
-8. Always test the flow you just implemented.
+6. Use `.opencode/skills/make-pr/SKILL.md` to create the PR with evidence (screenshots uploaded to an ephemeral host, not committed to the repo).
+7. Always test the flow you just implemented.
 
 PRD location preference:
 - Default new PRDs to `./prds/[prod].md` (root of openwork-enterprise).
