@@ -26,11 +26,29 @@
         "http://127.0.0.1:9823"
       ]
     },
+    "handsfree-electron-devtools": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--browserUrl",
+        "http://127.0.0.1:9824"
+      ]
+    },
     "notion": {
       "type": "remote",
       "enabled": true,
       "url": "https://mcp.notion.com/mcp",
       "oauth": {}
+    },
+    "openwork-browser": {
+      "type": "remote",
+      "url": "http://127.0.0.1:59006/mcp"
+    },
+    "chrome": {
+      "type": "remote",
+      "url": "http://127.0.0.1:59007/mcp"
     }
   }
 }
